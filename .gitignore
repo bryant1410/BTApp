@@ -1,3 +1,10 @@
+BTApp.xcworkspace
+Pods
+Podfile.lock
+BTApp.xcodeproj/project.xcworkspace
+BTApp.xcodeproj/xcuserdata
+.DS_Store
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
