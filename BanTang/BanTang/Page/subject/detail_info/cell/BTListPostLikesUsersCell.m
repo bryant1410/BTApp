@@ -44,7 +44,7 @@
         self.selectionStyle = UITableViewCellSelectionStyleNone;
         
         UIView *diverLine = [UIView new];
-        diverLine.backgroundColor = [UIColor colorWithHexString:@"#eeeeee"];
+        diverLine.backgroundColor = kUIColorFromRGB(0xeeeeee);
         [self.contentView addSubview:diverLine];
         self.diverLine = diverLine;
         [diverLine mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -54,7 +54,7 @@
         [self.diverLine setHidden:YES];
         
         UILabel *likesCountLabel = [[UILabel alloc] init];
-        likesCountLabel.textColor = [UIColor colorWithHexString:@"#d9d9d9"];
+        likesCountLabel.textColor = kUIColorFromRGB(0xd9d9d9);
         likesCountLabel.font = BTFont(10);
         [self.contentView addSubview:likesCountLabel];
         [likesCountLabel mas_makeConstraints:^(MASConstraintMaker *make) {

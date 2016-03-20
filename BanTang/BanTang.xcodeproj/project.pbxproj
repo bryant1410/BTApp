@@ -566,7 +566,7 @@
 			path = widget;
 			sourceTree = "<group>";
 		};
-		949071CC1C155727008FE53F /* Subject */ = {
+		949071CC1C155727008FE53F /* Subject(主题) */ = {
 			isa = PBXGroup;
 			children = (
 				949071CD1C155727008FE53F /* BTSubjectVC.h */,
@@ -575,7 +575,7 @@
 				949071E41C155727008FE53F /* subject_rank */,
 				949071EA1C155727008FE53F /* widget */,
 			);
-			name = Subject;
+			name = "Subject(主题)";
 			path = subject;
 			sourceTree = "<group>";
 		};
@@ -803,9 +803,9 @@
 			isa = PBXGroup;
 			children = (
 				94D6EA211C08293B0050B018 /* Reveal.framework */,
+				94A3457F1C07096500F2C8E4 /* Application */,
 				94CA4FD11C074839004606CC /* Model */,
 				94CA4FD01C074839004606CC /* Manager */,
-				94A3457F1C07096500F2C8E4 /* Application */,
 				94D6E9D41C07F0570050B018 /* Page */,
 				94A345BD1C070B4300F2C8E4 /* Common */,
 				94A345861C07096500F2C8E4 /* Other */,
@@ -1006,10 +1006,10 @@
 				94D6E9D51C07F0570050B018 /* Community(社区) */,
 				94D722591C17F4CA0041AC05 /* Message(消息) */,
 				94F67C5C1C0898B700029629 /* Mine(我的) */,
-				94D7226B1C17FA6A0041AC05 /* Message_list */,
+				94D7226B1C17FA6A0041AC05 /* Message_list(信息列表 */,
 				94E78E541C1586A4000A2D0F /* Sign(签到) */,
 				949071B81C155727008FE53F /* Product_list(购物清单) */,
-				949071CC1C155727008FE53F /* Subject */,
+				949071CC1C155727008FE53F /* Subject(主题) */,
 				949072001C155727008FE53F /* Subscribe(订阅) */,
 				949072031C155727008FE53F /* Topic_list(话题) */,
 				94D6E9DB1C07F0570050B018 /* Main(主要) */,
@@ -1118,13 +1118,14 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		94D7226B1C17FA6A0041AC05 /* Message_list */ = {
+		94D7226B1C17FA6A0041AC05 /* Message_list(信息列表 */ = {
 			isa = PBXGroup;
 			children = (
 				94D7226F1C17FBBF0041AC05 /* cell */,
 				94D7226C1C17FA7C0041AC05 /* BTMessageListVC.h */,
 				94D7226D1C17FA7C0041AC05 /* BTMessageListVC.m */,
 			);
+			name = "Message_list(信息列表";
 			path = Message_list;
 			sourceTree = "<group>";
 		};

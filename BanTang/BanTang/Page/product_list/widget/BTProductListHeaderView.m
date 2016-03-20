@@ -42,14 +42,14 @@
         UILabel *titleLabel = [[UILabel alloc] init];
         titleLabel.backgroundColor = [UIColor clearColor];
         titleLabel.font = BTFont(18);
-        titleLabel.textColor = [UIColor colorWithHexString:@"#787878"];
+        titleLabel.textColor = kUIColorFromRGB(0x787878);
         [self addSubview:titleLabel];
         self.titleLabel = titleLabel;
         
         UILabel *contentLabel = [[UILabel alloc] init];
         contentLabel.numberOfLines = 0;
         contentLabel.font = BTFont(15);
-        contentLabel.textColor = [UIColor colorWithHexString:@"#969696"];
+        contentLabel.textColor = kUIColorFromRGB(0x969696);
         [self addSubview:contentLabel];
         self.contentLabel = contentLabel;
     }

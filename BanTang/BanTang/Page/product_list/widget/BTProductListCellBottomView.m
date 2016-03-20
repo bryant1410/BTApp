@@ -84,7 +84,7 @@ static const CGFloat kBottomBtnH = 50.0;
     }];
     
     UIView *sepeatorView = [UIView new];
-    sepeatorView.backgroundColor = [UIColor colorWithHexString:@"#f8f9fa"];
+    sepeatorView.backgroundColor = kUIColorFromRGB(0xf8f9fa);
     [self addSubview:sepeatorView];
     [sepeatorView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.mas_equalTo(0);

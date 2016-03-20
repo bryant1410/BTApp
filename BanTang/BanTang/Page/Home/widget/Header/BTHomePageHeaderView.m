@@ -158,8 +158,8 @@ static NSString *const reuseID = @"enrtyListCell";
 {
     if (!_diverLine) {
         _diverLine = [UIView new];
-        _diverLine.backgroundColor = [UIColor colorWithHexString:@"#eeeeee"];
-        _diverLine.layer.shadowColor = [UIColor colorWithHexString:@"#eeeeee"].CGColor;
+        _diverLine.backgroundColor    = kUIColorFromRGB(0xeeeeee);
+        _diverLine.layer.shadowColor  = kUIColorFromRGB(0xeeeeee).CGColor;
         _diverLine.layer.shadowOffset = CGSizeMake(0.5, 0.5);
     }
     return _diverLine;
@@ -169,7 +169,7 @@ static NSString *const reuseID = @"enrtyListCell";
 {
     if (!_leftButtonView) {
         _leftButtonView = [UIView new];
-        _leftButtonView.backgroundColor = [UIColor colorWithHexString:@"#565937"];
+        _leftButtonView.backgroundColor = kUIColorFromRGB(0x565937);
         _leftButtonView.alpha = 0.8;
         _leftButtonView.layer.cornerRadius = 17;
         _leftButtonView.layer.masksToBounds = YES;
@@ -193,7 +193,7 @@ static NSString *const reuseID = @"enrtyListCell";
 {
     if (!_rightButtonView) {
         _rightButtonView = [UIView new];
-        _rightButtonView.backgroundColor = [UIColor colorWithHexString:@"#565937"];
+        _rightButtonView.backgroundColor = kUIColorFromRGB(0x565937);
         _rightButtonView.alpha = 0.8;
         CGFloat x = kScreen_Width - 10 - 34;
         _rightButtonView.layer.cornerRadius = 17;

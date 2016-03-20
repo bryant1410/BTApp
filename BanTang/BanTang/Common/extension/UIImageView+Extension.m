@@ -14,7 +14,9 @@
 {
     [self yy_setImageWithURL:[NSURL URLWithString:url]
                  placeholder:[UIImage imageNamed:@"default_image"]
-                     options:YYWebImageOptionSetImageWithFadeAnimation | YYWebImageOptionProgressiveBlur |YYWebImageOptionShowNetworkActivity
+                     options:YYWebImageOptionSetImageWithFadeAnimation |
+                             YYWebImageOptionProgressiveBlur           |
+                             YYWebImageOptionShowNetworkActivity
                   completion:nil];
 }
 

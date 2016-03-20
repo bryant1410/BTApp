@@ -74,7 +74,7 @@
     lianjieLabel.text = @"相关链接";
     CGFloat lianjieW = [lianjieLabel.text titleSizeWithfontSize:14 maxSize:CGSizeMake(MAXFLOAT, MAXFLOAT)].width;
     lianjieLabel.font = BTFont(14);
-    lianjieLabel.textColor = [UIColor colorWithHexString:@"#757575"];
+    lianjieLabel.textColor = kUIColorFromRGB(0x757575);
     [innerView addSubview:lianjieLabel];
     [lianjieLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(lianjieLogo.mas_right).offset(8);
@@ -84,7 +84,7 @@
     }];
     
     UIView *diverLine = [UIView new];
-    diverLine.backgroundColor = [UIColor colorWithHexString:@"#eeeeee"];
+    diverLine.backgroundColor = kUIColorFromRGB(0xeeeeee);
     [innerView addSubview:diverLine];
     [diverLine mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(innerView.mas_left);
@@ -114,7 +114,7 @@
     UILabel *productNameLabel = [[UILabel alloc] init];
     productNameLabel.font = BTFont(14);
     [innerView addSubview:productNameLabel];
-    productNameLabel.textColor = [UIColor colorWithHexString:@"#919191"];
+    productNameLabel.textColor = kUIColorFromRGB(0x919191);
     self.productNameLabel = productNameLabel;
     [productNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(productImageView.mas_right).offset(10);
@@ -134,7 +134,7 @@
     
     UILabel *productPlatform = [[UILabel alloc] init];
     productPlatform.font = BTFont(14);
-    productPlatform.textColor = [UIColor colorWithHexString:@"#c9c9c9"];
+    productPlatform.textColor = kUIColorFromRGB(0xc9c9c9);
     [innerView addSubview:productPlatform];
     self.productPlatform = productPlatform;
     [productPlatform mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -146,7 +146,7 @@
     UILabel *priceLabel = [[UILabel alloc] init];
     [innerView addSubview:priceLabel];
     priceLabel.font = BTFont(14);
-    priceLabel.textColor = [UIColor colorWithHexString:@"#f29393"];
+    priceLabel.textColor = kUIColorFromRGB(0xf29393);
     self.priceLabel = priceLabel;
     [priceLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(productPlatform.mas_right).offset(25);

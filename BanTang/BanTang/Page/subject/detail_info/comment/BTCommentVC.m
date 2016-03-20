@@ -36,7 +36,7 @@
                                                                           action:@selector(tapGestureHanlder)];
     [self.view addGestureRecognizer:tap];
     
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#eeeeee"];
+    self.view.backgroundColor = kUIColorFromRGB(0xeeeeee);
     
     UIBarButtonItem *leftItem = [UIBarButtonItem rx_barBtnItemWithTitle:@"取消"
                                                           titleColor:[UIColor whiteColor]
@@ -72,7 +72,7 @@
     }];
     
     UILabel *placeholderLabel = [[UILabel alloc] init];
-    placeholderLabel.textColor = [UIColor colorWithHexString:@"#c9c9c9"];
+    placeholderLabel.textColor = kUIColorFromRGB(0xc9c9c9);;
     placeholderLabel.font = BTFont(11);
     placeholderLabel.text = @"  写评论...";
     CGFloat width = [placeholderLabel.text

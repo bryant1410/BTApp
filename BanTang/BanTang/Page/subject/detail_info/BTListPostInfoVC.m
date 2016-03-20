@@ -54,7 +54,7 @@
 
 - (void)setupNavItem
 {
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#f8f8f8"];
+    self.view.backgroundColor = kUIColorFromRGB(0xf8f8f8);
     
     self.title = @"好物详情";
     
@@ -133,7 +133,7 @@
         {
             BTListPostProductCell *cell = [BTListPostProductCell cellWithTableView:tableView];
             cell.product = self.listPost.product[0];
-            cell.backgroundColor = [UIColor colorWithHexString:@"#f4f4f4"];
+            cell.backgroundColor = kUIColorFromRGB(0xf4f4f4);
             return cell;
         }else if (indexPath.row == 2){
             BTListPostLikesUsersCell *cell = [BTListPostLikesUsersCell cellWithTableView:tableView];
@@ -151,7 +151,7 @@
             {
                 BTListPostProductCell *cell = [BTListPostProductCell cellWithTableView:tableView];
                 cell.product = self.listPost.product[0];
-                cell.backgroundColor = [UIColor colorWithHexString:@"#f4f4f4"];
+                cell.backgroundColor = kUIColorFromRGB(0xf4f4f4);
                 return cell;
             }
         }else if (likesUserArray.count > 0) {
@@ -318,7 +318,7 @@
     if (!_bottomView) {
         _bottomView = [[BTListPostBottomView alloc] init];
         [_bottomView setDynamic:self.dynamic];
-        _bottomView.backgroundColor = [UIColor colorWithHexString:@"#ffffff"];
+        _bottomView.backgroundColor = kUIColorFromRGB(0xffffff);
         _bottomView.delegate = self;
         CGFloat H = 64;
         _bottomView.frame = CGRectMake(0, kScreen_Height - 64 - H, kScreen_Width, H);

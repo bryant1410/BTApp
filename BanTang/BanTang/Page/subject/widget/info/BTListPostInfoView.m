@@ -68,13 +68,13 @@
     
     UILabel *nickNameLabel = [[UILabel alloc] init];
     nickNameLabel.font = BTFont(14);
-    nickNameLabel.textColor = [UIColor colorWithHexString:@"#8c8c8c"];
+    nickNameLabel.textColor = kUIColorFromRGB(0x8c8c8c);
     [self addSubview:nickNameLabel];
     self.nickNameLabel = nickNameLabel;
     
     UILabel *publishTimeLabel = [[UILabel alloc] init];
     publishTimeLabel.font = BTFont(13);
-    publishTimeLabel.textColor = [UIColor colorWithHexString:@"#dddddd"];
+    publishTimeLabel.textColor = kUIColorFromRGB(0xdddddd);
     [self addSubview:publishTimeLabel];
     self.publishTimeLabel = publishTimeLabel;
     
@@ -103,7 +103,7 @@
     UILabel *contentLabel = [[UILabel alloc] init];
     contentLabel.font = BTFont(14);
     contentLabel.numberOfLines = 0;
-    contentLabel.textColor = [UIColor colorWithHexString:@"#8c8c8c"];
+    contentLabel.textColor = kUIColorFromRGB(0x8c8c8c);
     [self addSubview:contentLabel];
     self.contentLabel = contentLabel;
     
@@ -158,7 +158,7 @@
                      forControlEvents:UIControlEventTouchUpInside];
         button.titleLabel.font = BTFont(13);
         [button setTitle:tag.name forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor colorWithHexString:@"#d18a8e"] forState:UIControlStateNormal];
+        [button setTitleColor:kUIColorFromRGB(0xd18a8e) forState:UIControlStateNormal];
         [self.tagsView addSubview:button];
         [self.tagsButtonArray addObject:button];
     }

@@ -49,7 +49,7 @@
         UILabel *titleLabel = [[UILabel alloc] init];
         titleLabel.font = BTFont(16);
         titleLabel.textAlignment = NSTextAlignmentCenter;
-        titleLabel.textColor = [UIColor colorWithHexString:@"#777777"];
+        titleLabel.textColor = kUIColorFromRGB(0x777777);
         [self.contentView addSubview:titleLabel];
         self.titleLabel = titleLabel;
         [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -61,7 +61,7 @@
         BTNoHLbutton *likeButton = [[BTNoHLbutton alloc] init];
         likeButton.titleLabel.font = BTFont(13);
         [likeButton setImage:[UIImage imageNamed:@"home_likes_icon"] forState:UIControlStateNormal];
-        [likeButton setTitleColor:[UIColor colorWithHexString:@"#c9c9c9"] forState:UIControlStateNormal];
+        [likeButton setTitleColor:kUIColorFromRGB(0xc9c9c9) forState:UIControlStateNormal];
         [self.contentView addSubview:likeButton];
         self.likeButton = likeButton;
         [self.likeButton mas_makeConstraints:^(MASConstraintMaker *make) {

@@ -62,7 +62,7 @@
         self.likeButton = likeButton;
         
         UIView *diverLine = [UIView new];
-        diverLine.backgroundColor = [UIColor colorWithHexString:@"#eeeeee"];
+        diverLine.backgroundColor = kUIColorFromRGB(0xeeeeee);
         [self addSubview:diverLine];
         [diverLine mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.mas_equalTo(self.mas_centerY);
@@ -78,7 +78,7 @@
         [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
         [btn setTitle:@"      我来说两句" forState:UIControlStateNormal];
         btn.titleLabel.font = BTFont(11);
-        [btn setTitleColor:[UIColor colorWithHexString:@"#c0c0c6"] forState:UIControlStateNormal];
+        [btn setTitleColor:kUIColorFromRGB(0xc0c0c6) forState:UIControlStateNormal];
         [self addSubview:btn];
         [btn mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(iconView.mas_right).offset(9);

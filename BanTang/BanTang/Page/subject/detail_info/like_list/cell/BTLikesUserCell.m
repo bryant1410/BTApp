@@ -52,7 +52,7 @@
         self.iconButton = iconButton;
         
         UILabel *nameLabel = [[UILabel alloc] init];
-        nameLabel.textColor = [UIColor colorWithHexString:@"#757575"];
+        nameLabel.textColor = kUIColorFromRGB(0x757575);
         nameLabel.font = BTFont(14);
         [self.contentView addSubview:nameLabel];
         [nameLabel mas_makeConstraints:^(MASConstraintMaker *make) {

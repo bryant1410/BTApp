@@ -123,7 +123,7 @@ static CGFloat const listPostHeight = 377.0f;
 
     UILabel *nickNameLabel = [[UILabel alloc] init];
     nickNameLabel.font = BTFont(14);
-    nickNameLabel.textColor = [UIColor colorWithHexString:@"#8c8c8c"];
+    nickNameLabel.textColor = kUIColorFromRGB(0x8c8c8c);
     [self.topView addSubview:nickNameLabel];
     [nickNameLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.iconButton.mas_right).offset(10);
@@ -135,7 +135,7 @@ static CGFloat const listPostHeight = 377.0f;
     
     UILabel *publishTimeLabel = [[UILabel alloc] init];
     publishTimeLabel.font = BTFont(13);
-    publishTimeLabel.textColor = [UIColor colorWithHexString:@"#dddddd"];
+    publishTimeLabel.textColor = kUIColorFromRGB(0xdddddd);
     [self.topView addSubview:publishTimeLabel];
     [publishTimeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.iconButton.mas_right).offset(horizontalPading);
@@ -237,7 +237,7 @@ static CGFloat const listPostHeight = 377.0f;
     self.toolView = toolView;
     
     UIView *topDiverView = [UIView new];
-    topDiverView.backgroundColor = [UIColor colorWithHexString:@"#f8f9fa"];
+    topDiverView.backgroundColor = kUIColorFromRGB(0xf8f9fa);
     UIImage *shadowImage = [UIImage rx_captureImageWithImageName:@"community_cell_shadow"];
     UIImageView *shadowImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreen_Width, 3)];
     shadowImageView.image = shadowImage;
@@ -327,7 +327,7 @@ static CGFloat const listPostHeight = 377.0f;
 					 forControlEvents:UIControlEventTouchUpInside];
         button.titleLabel.font = BTFont(13);
         [button setTitle:tag.name forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor colorWithHexString:@"#d18a8e"] forState:UIControlStateNormal];
+        [button setTitleColor:kUIColorFromRGB(0xd18a8e) forState:UIControlStateNormal];
 		[self.tagsView addSubview:button];
 		[self.tagsButtonArray addObject:button];
 		

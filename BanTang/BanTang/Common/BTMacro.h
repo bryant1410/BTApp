@@ -9,7 +9,7 @@
 #ifndef BTMacro_h
 #define BTMacro_h
 
-#define BTGobalRedColor [UIColor colorWithHexString:@"#ec5252"]
+#define BTGobalRedColor kUIColorFromRGB(0xec5252)
 #define kBaseURL @"http://open3.bantangapp.com/"
 
 #import "BTCategoryHeader.h"

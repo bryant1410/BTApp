@@ -78,7 +78,7 @@
 
 - (void)setupNavItem
 {
-    self.view.backgroundColor = [UIColor colorWithHexString:@"#f8f8f8"];
+    self.view.backgroundColor = kUIColorFromRGB(0xf8f8f8);
     
     self.title = @"本期话题";
     
@@ -126,10 +126,10 @@
     
     // 设置footerRefresh
     __weak typeof(self) weakSelf = self;
-    
+   
     // 设置headerRefresh
     [self.tableView addPullToRefreshWithPullText:@"C'est La Vie"
-                                   pullTextColor:[UIColor colorWithHexString:@"#cb6e76"]
+                                   pullTextColor:kUIColorFromRGB(0xcb6e76)
                                     pullTextFont:DefaultTextFont
                                   refreshingText:@"La Vie est belle"
                              refreshingTextColor:[UIColor blueColor]

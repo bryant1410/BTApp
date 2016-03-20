@@ -39,7 +39,7 @@ static const CGFloat kLeftPadding = 10.0;
 - (void)setupTopView
 {
     UIView *sepeatorView = [UIView new];
-    sepeatorView.backgroundColor = [UIColor colorWithHexString:@"#f8f9fa"];
+    sepeatorView.backgroundColor = kUIColorFromRGB(0xf8f9fa);
     [self addSubview:sepeatorView];
     [sepeatorView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.mas_equalTo(self);
