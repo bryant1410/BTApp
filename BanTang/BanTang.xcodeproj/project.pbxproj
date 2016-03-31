@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91595ABEEC643215E3D0EFC5 /* libPods-BanTang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75779D342F24DEECD2EBC22B /* libPods-BanTang.a */; };
 		941588971C1684D30037DC24 /* BTHomeTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 941588951C1684D30037DC24 /* BTHomeTopicCell.m */; };
 		9418EF5E1C3F6DA300C1F345 /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9418EF5D1C3F6DA300C1F345 /* UIImageView+Extension.m */; };
 		941E82431C103C7B0056DF2F /* BTDBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 941E82401C103C7B0056DF2F /* BTDBHelper.m */; };
@@ -137,7 +138,6 @@
 		94E78E571C1586BD000A2D0F /* BTSignSuccessPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E78E561C1586BD000A2D0F /* BTSignSuccessPopView.m */; };
 		94E78E591C1586C9000A2D0F /* BTSignSuccessPopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E78E581C1586C9000A2D0F /* BTSignSuccessPopView.xib */; };
 		94F67C621C0898E700029629 /* BTProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F67C611C0898E700029629 /* BTProfileVC.m */; };
-		E49C19954C66B565B202D2A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FE4DBE1DE7FA661AF065F9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,9 +158,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		046D9571DD4FDFC8322FD76E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		34FE4DBE1DE7FA661AF065F9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4021BE06B12D091579DB4494 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		75779D342F24DEECD2EBC22B /* libPods-BanTang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BanTang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		941588941C1684D30037DC24 /* BTHomeTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTHomeTopicCell.h; sourceTree = "<group>"; };
 		941588951C1684D30037DC24 /* BTHomeTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTHomeTopicCell.m; sourceTree = "<group>"; };
 		9418EF5C1C3F6DA300C1F345 /* UIImageView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
@@ -415,6 +413,8 @@
 		94E78E581C1586C9000A2D0F /* BTSignSuccessPopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BTSignSuccessPopView.xib; sourceTree = "<group>"; };
 		94F67C601C0898E700029629 /* BTProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTProfileVC.h; sourceTree = "<group>"; };
 		94F67C611C0898E700029629 /* BTProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTProfileVC.m; sourceTree = "<group>"; };
+		EAEDCE7C9B6C7EFB1905592E /* Pods-BanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanTang/Pods-BanTang.release.xcconfig"; sourceTree = "<group>"; };
+		ED86B0B167F4BA5CE07C20FE /* Pods-BanTang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanTang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BanTang/Pods-BanTang.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,7 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				945A47AA1C09F16200BC39D6 /* SystemConfiguration.framework in Frameworks */,
-				E49C19954C66B565B202D2A0 /* libPods.a in Frameworks */,
+				91595ABEEC643215E3D0EFC5 /* libPods-BanTang.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,15 +444,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		60D23B680A52DD1CA9502CAC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4021BE06B12D091579DB4494 /* Pods.debug.xcconfig */,
-				046D9571DD4FDFC8322FD76E /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		941588931C1684D30037DC24 /* cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -784,8 +775,8 @@
 				94A345511C06FA5100F2C8E4 /* BanTangTests */,
 				94A3455C1C06FA5100F2C8E4 /* BanTangUITests */,
 				94A345361C06FA5100F2C8E4 /* Products */,
-				60D23B680A52DD1CA9502CAC /* Pods */,
 				BC00CF893302C3801B56FDCA /* Frameworks */,
+				CF086AEF317085CEE838210D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1193,9 +1184,18 @@
 			isa = PBXGroup;
 			children = (
 				945A47A91C09F16200BC39D6 /* SystemConfiguration.framework */,
-				34FE4DBE1DE7FA661AF065F9 /* libPods.a */,
+				75779D342F24DEECD2EBC22B /* libPods-BanTang.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF086AEF317085CEE838210D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED86B0B167F4BA5CE07C20FE /* Pods-BanTang.debug.xcconfig */,
+				EAEDCE7C9B6C7EFB1905592E /* Pods-BanTang.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1205,12 +1205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94A345621C06FA5100F2C8E4 /* Build configuration list for PBXNativeTarget "BanTang" */;
 			buildPhases = (
-				2786DB3E6EA716103B5AC67A /* Check Pods Manifest.lock */,
+				043EA06C0BD1B634AE722687 /* Check Pods Manifest.lock */,
 				94A345311C06FA5100F2C8E4 /* Sources */,
 				94A345321C06FA5100F2C8E4 /* Frameworks */,
 				94A345331C06FA5100F2C8E4 /* Resources */,
-				31EAF104EA3B39E6CAD4D88D /* Embed Pods Frameworks */,
-				4C0BA4908D48000328341035 /* Copy Pods Resources */,
+				807A213F5923C786A97AF5DD /* Embed Pods Frameworks */,
+				B39AE8FB6EA98BCEE15CC5D6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1339,7 +1339,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2786DB3E6EA716103B5AC67A /* Check Pods Manifest.lock */ = {
+		043EA06C0BD1B634AE722687 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1354,7 +1354,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		31EAF104EA3B39E6CAD4D88D /* Embed Pods Frameworks */ = {
+		807A213F5923C786A97AF5DD /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1366,10 +1366,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BanTang/Pods-BanTang-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4C0BA4908D48000328341035 /* Copy Pods Resources */ = {
+		B39AE8FB6EA98BCEE15CC5D6 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1381,7 +1381,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BanTang/Pods-BanTang-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1637,7 +1637,7 @@
 		};
 		94A345631C06FA5100F2C8E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4021BE06B12D091579DB4494 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = ED86B0B167F4BA5CE07C20FE /* Pods-BanTang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -1696,7 +1696,7 @@
 		};
 		94A345641C06FA5100F2C8E4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 046D9571DD4FDFC8322FD76E /* Pods.release.xcconfig */;
+			baseConfigurationReference = EAEDCE7C9B6C7EFB1905592E /* Pods-BanTang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
