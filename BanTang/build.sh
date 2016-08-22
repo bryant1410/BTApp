@@ -19,7 +19,7 @@ IPA_PATH="$HOME/${IPANAME}"
 echo ${IPA_PATH}
 echo "${IPA_PATH}">> text.txt
 
-//下面2行是集成有Cocopods的用法
+#下面2行是集成有Cocopods的用法
 echo "=================clean================="
 xcodebuild -workspace "${APP_NAME}.xcworkspace" -scheme "${APP_NAME}"  -configuration 'Release' clean
 
