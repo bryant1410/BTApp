@@ -1,5 +1,8 @@
 # 工程名
 APP_NAME="BanTang"
+
+pod install --verbose --no-repo-update
+
 # 证书
 CODE_SIGN_DISTRIBUTION="iPhone Distribution: jianwei wang (65NHC6TDX8)"
 # info.plist路径
