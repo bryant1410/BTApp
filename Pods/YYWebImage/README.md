@@ -32,7 +32,7 @@ Features
 Usage
 ==============
 
-###Load image from URL
+### Load image from URL
 
 	// load from remote url
 	imageView.yy_imageURL = [NSURL URLWithString:@"http://github.com/logo.png"];
@@ -41,14 +41,14 @@ Usage
 	imageView.yy_imageURL = [NSURL fileURLWithPath:@"/tmp/logo.png"];
 	
 
-###Load animated image
+### Load animated image
 	
 	// just replace `UIImageView` with `YYAnimatedImageView`
 	UIImageView *imageView = [YYAnimatedImageView new];
 	imageView.yy_imageURL = [NSURL URLWithString:@"http://github.com/ani.webp"];
 
 
-###Load image progressively
+### Load image progressively
 	
 	// progressive
 	[imageView yy_setImageWithURL:url options:YYWebImageOptionProgressive];
@@ -57,7 +57,7 @@ Usage
 	[imageView yy_setImageWithURL:url options:YYWebImageOptionProgressiveBlur ｜ YYWebImageOptionSetImageWithFadeAnimation];
 
 
-###Load and process image
+### Load and process image
 	
 	// 1. download image from remote
 	// 2. get download progress
@@ -80,7 +80,7 @@ Usage
             }
         }];
         
-###Image Cache
+### Image Cache
     YYImageCache *cache = [YYWebImageManager sharedManager].cache;
     
     // get cache capacity
@@ -181,7 +181,7 @@ YYWebImage 是一个异步图片加载框架 ([YYKit](https://github.com/ibireme
 用法
 ==============
 
-###从 URL 加载图片
+### 从 URL 加载图片
 
 	// 加载网络图片
 	imageView.yy_imageURL = [NSURL URLWithString:@"http://github.com/logo.png"];
@@ -190,14 +190,14 @@ YYWebImage 是一个异步图片加载框架 ([YYKit](https://github.com/ibireme
 	imageView.yy_imageURL = [NSURL fileURLWithPath:@"/tmp/logo.png"];
 	
 
-###加载动图
+### 加载动图
 	
 	// 只需要把 `UIImageView` 替换为 `YYAnimatedImageView` 即可。
 	UIImageView *imageView = [YYAnimatedImageView new];
 	imageView.yy_imageURL = [NSURL URLWithString:@"http://github.com/ani.webp"];
 
 
-###渐进式图片加载
+### 渐进式图片加载
 	
 	// 渐进式：边下载边显示
 	[imageView yy_setImageWithURL:url options:YYWebImageOptionProgressive];
@@ -206,7 +206,7 @@ YYWebImage 是一个异步图片加载框架 ([YYKit](https://github.com/ibireme
 	[imageView yy_setImageWithURL:url options:YYWebImageOptionProgressiveBlur ｜ YYWebImageOptionSetImageWithFadeAnimation];
 
 
-###加载、处理图片
+### 加载、处理图片
 	
 	// 1. 下载图片
 	// 2. 获得图片下载进度
@@ -230,7 +230,7 @@ YYWebImage 是一个异步图片加载框架 ([YYKit](https://github.com/ibireme
         }];
 
 
-###图片缓存
+### 图片缓存
     YYImageCache *cache = [YYWebImageManager sharedManager].cache;
     
     // 获取缓存大小
